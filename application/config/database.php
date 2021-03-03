@@ -72,6 +72,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $active_group = 'default';
 $query_builder = TRUE;
+//by VB : Le paramètre par défaut est TRUE. Si vous n'utilisez pas la classe de générateur de requêtes, la définir sur FALSE utilisera moins de ressources lorsque les classes de base de données sont initialisées.
+//ATTENTION :certaines classes CodeIgniter telles que Sessions nécessitent l'activation de Query Builder pour accéder à certaines fonctionnalités.
 
 $db['default'] = array(
 	'dsn'	=> '',

@@ -3,7 +3,10 @@ http://lamanu-formationcomplete/CodeIgniterHospital/index.php/news/limace1
 pour voir toute la requete
 http://lamanu-formationcomplete/CodeIgniterHospital/news
 
+formulaire
+http://lamanu-formationcomplete/CodeIgniterHospital/index.php/news/create
 
+*********************
 
 Re-cc la Team
 Pour ceux qui ont suivi et tenté le tuto de CodeIgniter avec la table "news"...

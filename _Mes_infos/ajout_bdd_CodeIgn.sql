@@ -7,7 +7,7 @@ CREATE TABLE news (
         KEY slug (slug)
 );
 
-INSERT INTO news (title,article,text) 
+INSERT INTO news (title,slug,text) 
 VALUES 
 ('titre1','article1','texte1 : Sed1 q1uaerat qui1a ut repudian1dae quae1 et dolorem dolorem'),
 ('titre2','article2','texte2 : Sed2 quaerat2 quia ut rep2udian2dae quae et do2lorem dolorem'),

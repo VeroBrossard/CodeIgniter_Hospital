@@ -1,0 +1,2 @@
+<h2>Félicitations !!! CA FONCTIONNE !!! </h2>
+<p>En continuant, vous pouvez voir une condition qui vérifie si la validation du formulaire s'est déroulée avec succès. Si ce n'est pas le cas, le formulaire s'affiche, s'il a été soumis et a passé toutes les règles, le modèle est appelé. Après cela, une vue est chargée pour afficher un message de réussite. Créez une vue sur application / views / news / success.php et rédigez un message de réussite.</p>
