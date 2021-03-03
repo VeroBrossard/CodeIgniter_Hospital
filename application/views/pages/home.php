@@ -1,6 +1,8 @@
 <p>home.php by VB </p><br>
 
-<br>        <!-- http://lamanu-formationcomplete/CodeIgniterHospital/news  -->
+<br>    
+<p><a href="<?php echo site_url('patients'); ?>">vers BDD // Table  PATIENTS</a></p>
+    <!-- http://lamanu-formationcomplete/CodeIgniterHospital/news  -->
         <p><a href="<?php echo site_url('news'); ?>">vers BDD // Table  NEWS</a></p>
 
 <br><br>
