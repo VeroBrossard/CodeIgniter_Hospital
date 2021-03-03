@@ -1,0 +1,35 @@
+adresse pour voir les articles 
+http://lamanu-formationcomplete/CodeIgniterHospital/index.php/news/limace1
+pour voir toute la requete
+http://lamanu-formationcomplete/CodeIgniterHospital/news
+
+
+
+Re-cc la Team
+Pour ceux qui ont suivi et tenté le tuto de CodeIgniter avec la table "news"...
+il y a un souci dans l'adresse des liens générés par index.php (arborescence VSC : views/news/index.php).
+
+http://lamanu-formationcomplete/CodeIgniterHospital/news  (depuis index.php pour tous les articles fonctionne bien)
+
+mais quand on veut voir un article en cliquant le lien sur la page, le code génère l'adresse :
+http://[::1]/CodeIgniterHospital/index.php/news/article1
+
+alors qu'il faudrait:
+http://lamanu-formationcomplete/CodeIgniterHospital/news/article1
+(qui fonctionne aussi SI on le tape à la main dans la barre d'adresse !!!
+
+pour info "lamanu-formationcomplete" est le nom de mon virtualhost.
+J'ai essayé aussi avec un virtualhost dédié à l'exo et le résultat est le même, le nom du virtualhost est remplacé par  [::1] !!! 
+Quelqu'un a une idée géniale pour règler le pb ???
+
+Solution : complèter
+$config['base_url'] = 'http://lamanu-formationcomplete/CodeIgniterHospital/';
+cad  http://lenomdevotrevirtualhost/nomdevotredossierracine/
+dans "application/config/config.php".
+De rien...c'est kado !!!:sunglasses: :smile:
+
+
+application\views\news
+
+
+
