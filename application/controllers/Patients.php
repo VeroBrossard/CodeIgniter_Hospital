@@ -31,8 +31,8 @@ if (empty($data['patients_item']))
 }
 
 // $data['title'] = $data['patients_item']['title'] .'dans Patients.php by VB';
-$data['title'] = $data['patients_item']['phone'] .'dans Patients.php by VB';
-
+//$data['title'] = $data['patients_item']['phone'] .'dans Patients.php by VB';
+$data['title'] = ' Patients by Phone';
 $this->load->view('templates/headerHosp', $data);
 $this->load->view('patients/view', $data);
 $this->load->view('templates/footer');
