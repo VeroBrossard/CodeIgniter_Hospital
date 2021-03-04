@@ -22,8 +22,9 @@ echo 'id patient = ' .$patients_item['id']. "<br>";
   </tr>
   <tr><td colspan="5"></td></tr>
   <tfoot>
-          <td colspan="3"><a href="<?php echo site_url('patients/create'); ?>">Supprimer</a> </td>
-          <td colspan="2"><a href="<?php echo site_url('patients/update'); ?>">Modifier</a>  </td>
+          <td colspan="3"><a href="<?php echo site_url('patients/'); ?>">Supprimer</a> </td>
+          <td colspan="2"><a href="<?php echo site_url('patients/create/'.$patients_item['id']); ?>">Modifier</a>
+            </td>
         </tfoot>
 
   <tbody>

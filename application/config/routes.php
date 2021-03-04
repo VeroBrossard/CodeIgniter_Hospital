@@ -67,6 +67,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 // $route['default_controller'] = 'pages/view';
 
 //4 formulaire
+
+
 $route['patients/create'] = 'patients/create';
 $route['patients/(:any)'] = 'patients/view_1Patient/$1';
 $route['patients'] = 'patients';

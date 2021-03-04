@@ -1,6 +1,5 @@
 <div>
 
-
 <span><h2><a href="<?php echo site_url('patients/create'); ?>">Add NEW Patient</a></h2></span>
 </div>
 
@@ -10,8 +9,8 @@
         <tr>
            <th>Nom</th>
             <th>Prénom</th>
-            <th>Tél</th>
-            <th> voir Détails</th>
+            <!-- <th>Tél</th> -->
+            <th> </th>
          </tr>
         </thead>
         <tbody>
@@ -22,19 +21,20 @@ foreach ($patients as $patients_item): ?>
 <!-- <div class="main"> -->
 
         <tr>
-                <td><?php echo $patients_item['lastname']; ?></td>
-                <td><?php echo $patients_item['firstname'] .'by VB'; ?></td>
-                <td><?php echo $patients_item['phone']; ?></td>
+                <td><?= $patients_item['firstname']; ?></td>
+                <td><?= $patients_item['lastname']; ?></td>
+                <!-- <td><?php echo $patients_item['phone']; ?></td> -->
             <!-- <td><?php echo $patients_item['birthdate']; ?></td>
                 <td><?php echo $patients_item['mail']; ?></td> -->
-                <td><a href="<?php echo site_url('patients/'.$patients_item['phone']); ?>">détails</a></td>
+                <td><a href="<?= site_url('patients/'.$patients_item['id']); ?>">détails</a></td>
         </tr>   
 <?php endforeach; ?>
 
         </tbody>
-        <tfoot>
-          <td colspan="5"> nombre de patients /td>
-        </tfoot>
+        <tfoot><tr>  <td colspan="5"> ------------------  </td></tr>
+        <tr>  <td colspan="5"> nombre de patients <?= $total ?> </td>
+        </tfoot></tr>
+        
       </table>
     </p>
   </section><br /><br />

@@ -1,6 +1,6 @@
 <section>
-  <h2>Félicitations !!! CA FONCTIONNE !!! </h2>
-<p>Ce nouveau patient est enregistré</p>
+  <h2>Félicitations !!! </h2>
+<p>Ce nouveau patient est MAJ</p>
 </section><br>
 <footer>
 <!-- <a href="JavaScript:window.close()">Close</a> -->

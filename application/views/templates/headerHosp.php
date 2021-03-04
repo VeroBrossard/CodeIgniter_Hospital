@@ -3,11 +3,11 @@
 <head>
         <link rel="stylesheet" href="<?php echo base_url("application/assets/css/style.css"); ?>">
 
-        <title>Hospital by VB</title>
+        <title>Hospital</title>
 </head>
 
 <body>
-        <header id="headerHosp"> Hospital by VB
+        <header id="headerHosp"> Hospital
               
         </header>
         <span style="text-align : center;" ><h2><?php echo $title; ?></h2></span>
