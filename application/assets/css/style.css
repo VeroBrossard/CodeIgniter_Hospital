@@ -23,9 +23,10 @@ body {
   padding-bottom: 30px;
 }
 
+
 header {
   padding : 0px;
-  background-image: url("../img/colyseum.jpg");
+  //background-image: url("../img/guirlande.jpg"); 
   background-color: white;
   /* background-repeat: no-repeat; */
   background-size: cover;
@@ -60,11 +61,23 @@ header {
  /* background-position-x: center;*/
   /* opacity: 0.7; */
 }
-#title1{
-  /* color: red; */
+
+#headerHosp {
+  background-image: url("../img/colyseum.jpg");
+}
+.header{
+  backdrop-filter: blur(2px);
+  text-align: center;
+  color:red;
+  height: 30vh;
+  padding-top: 8vh;
+}
+/* #title1{
   font-size: 1em;
   opacity: 1;
-}
+} */
+
+
 #titreExo, #footer{
 width: 70%;
 margin: auto;
@@ -90,10 +103,11 @@ h1 {
   font-size: 1.5em;
   text-align: center;
 }
-
+footer{
+  text-align: center;
+ }
 
 .box {
-
   position: relative;  
   width: 150px;  
   height: 45px;  
@@ -137,7 +151,7 @@ h1 {
     body {
        font-size: 1.30em;
     }
-    #header{
+    header{
       font-size: 4em;
     }
     h1 {
@@ -152,7 +166,7 @@ h1 {
     width: auto;
     padding: 0 2em;
   }
-  #header{
+  header{
     font-size: 2.5em;
     height: 25vh;
   }
@@ -166,7 +180,7 @@ h1 {
   body {
     font-size: 1.15em;
   }
-  #header{
+  header{
     font-size:2.5em;
     height: 20vh;
   }
@@ -183,7 +197,7 @@ h1 {
     font-size: 1.15em;
     color:black;
   }
-  #header{
+  header{
     font-size: 3em;
     height: 10vh;
   }

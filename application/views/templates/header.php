@@ -2,10 +2,10 @@
         <head>
         <link rel="stylesheet" href="<?php echo base_url("application/assets/css/style.css");?>">
 
-                <title>CodeIgniter Tutorial by VB</title>
+                <title>CodeIgniter VB2</title>
         </head>
         <body>
-        <header id="header"> CodeIgniter in header  by VB2</header>
+        <header ><span class="header">CodeIgniter VB2</span></header> <br>
        
 
                 <h1> H1<?php echo $title; ?></h1>
