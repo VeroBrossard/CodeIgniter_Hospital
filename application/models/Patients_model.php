@@ -54,5 +54,11 @@ public function update_patient($id)
         // , array('id' => $id));
 }    
 
+public function delete_patient($id){
+        // $this -> db -> where ('id',$id);
+        // $this->db->delete('patients');
+        $this->db->query("delete from patients where id='".$id."'");
+        echo 'delete  réalisé par delete_patient';
+}
 
 }

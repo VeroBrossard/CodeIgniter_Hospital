@@ -20,7 +20,7 @@ class Patients extends CI_Controller
      // var_dump($data);
       $this->load->view('templates/headerHosp', $data);
       $this->load->view('patients/index', $data);
-      $this->load->view('templates/footer');
+      $this->load->view('templates/patients_footer');
     }
   }
 
@@ -38,7 +38,7 @@ class Patients extends CI_Controller
     $data['title'] = ' Patients by Id';
     $this->load->view('templates/headerHosp', $data);
     $this->load->view('patients/view', $data);
-    $this->load->view('templates/footer');
+    $this->load->view('templates/patients_footer');
   }
 
 public function hello(){
@@ -73,7 +73,7 @@ public function hello(){
     if ($this->form_validation->run() === FALSE) {
       $this->load->view('templates/headerHosp', $data);
       $this->load->view('patients/create');
-      $this->load->view('templates/footer');
+      $this->load->view('templates/patients_footer');
     } else {
       // $id_retour= '';
 
@@ -85,12 +85,27 @@ public function hello(){
         else {
         //on crée l'enregistrement        
         $this->patients_model->set_patient();
-        $this->load->view('patients/success');
+        $this->load->view('patients/create_success');
         }
       }
     }
-    public function delete(){
+    public function delete_1patient($id = NULL){
       
+        if ($id == NULL){
+  
+          show_404();
+        }
+        else{
+        // $data['title'] = $data['patients_item']['title'] .'dans Patients.php by VB';
+        //$data['title'] = $data['patients_item']['phone'] .'dans Patients.php by VB';
+        $data['title'] = ' DELETE Patients by Id';
+        $data['id_supp'] = $id;
+        $this->patients_model->delete_patient($id);
+        $this->load->view('templates/headerHosp', $data);
+        $this->load->view('patients/delete_success', $data);
+        $this->load->view('templates/patients_footer');
+        }
+      }
+
     }
 
-}
