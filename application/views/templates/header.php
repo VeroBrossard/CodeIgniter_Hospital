@@ -5,7 +5,7 @@
                 <title>CodeIgniter VB2</title>
         </head>
         <body>
-        <header ><span class="header">CodeIgniter VB2</span></header> <br>
+        <header ><span class="header">header.php by vb</span></header> <br>
        
 
                 <h1> H1<?php echo $title; ?></h1>
